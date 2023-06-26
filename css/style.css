@@ -1,0 +1,78 @@
+/* 헤더 */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+}
+
+.header.on {
+    height: 80px;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+
+.header .logo {
+    display: block;
+    width: 100px;
+    height: 70px;
+    background: url(../images/sollago_logo_en.png) no-repeat;
+    transition: 0.5s;
+}
+
+.header.on .logo {
+    background: url(../images/sollago_logo_en2.png) no-repeat;
+}
+
+/* 헤더 메뉴 */
+
+.header .gnb>ul {
+    display: flex;
+    gap: 100px;
+}
+
+.header .gnb>ul>li>a {
+    display: block;
+    font-size: 20px;
+}
+
+.header .login {
+    display: flex;
+    gap: 30px;
+}
+
+.header .login li {
+    position: relative;
+}
+
+.header .login li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 8px;
+    background: #777;
+}
+
+.header .login a {
+    font-size: 15px;
+    color: #666;
+}
+
+
+
+
+
+.main_visual {
+    background: url(../images/main_bg03.jpg);
+    height: calc(100vh - 100px);
+}
