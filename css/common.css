@@ -45,7 +45,7 @@ body {
     /* font-family:'Noto Sans KR', sans-serif;
     font-family: 'Noto Serif KR', serif;
     font-family: 'Roboto', sans-serif;; */
-    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', 'Noto Sans KR', 'Noto Serif KR', sans-serif;
     word-break: keep-all;
     line-height: 1;
     color: #333;
@@ -79,6 +79,6 @@ em {
     margin: 0 auto;
 }
 
-.section {
+.sec {
     padding: 100px 0;
 }
