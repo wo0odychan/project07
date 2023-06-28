@@ -35,4 +35,10 @@ $(function () {
         mainSlide.slideNext();
     });
 
+    $(function () {
+        $('.main_content .itm').on('click', function () {
+            $(this).addClass('on').siblings().removeClass('on');
+        })
+    })
+
 })
