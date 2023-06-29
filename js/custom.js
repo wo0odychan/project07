@@ -9,7 +9,7 @@ $(function () {
     $(window).on('scroll', function () {
         let sct = $(window).scrollTop();
         $('._move').each(function () {
-            if (sct + $(window).innerHeight() - 200 > $(this).offset().top) {
+            if (sct + $(window).innerHeight() - 300 > $(this).offset().top) {
                 $(this).addClass('on')
             } else {
                 $(this).removeClass('on')
@@ -39,6 +39,15 @@ $(function () {
         $('.main_content .itm').on('click', function () {
             $(this).addClass('on').siblings().removeClass('on');
         })
+    });
+
+    const bn = new Swiper(".pro_slide", {
+        direction: "vertical",
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: 2000,
+        },
     })
 
 })
